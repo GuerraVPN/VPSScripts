@@ -1,7 +1,8 @@
 
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "bash /root/VPSScript.sh" > /bin/vps && chmod +x /bin/vps
-echo "bash /root/VPSScript.sh" > /bin/VPS && chmod +x /bin/VPS
+mkdir /etc/vpsscript && mv /root/vpsscript.sh /etc/vpsscript/VPSScript
+echo "bash /etc/vpsscript/VPSScript" > /bin/vps && chmod +x /bin/vps
+echo "bash /etc/vpsscript/VPSScript" > /bin/VPS && chmod +x /bin/VPS
 ##CONFIGURACOES DO SCRIPT
 
 ##BY NARUTINBR
@@ -32,17 +33,7 @@ CRASHVPN () {
       sleep 3
 }
 ATUALIZACAO () {
-      rm /root/VPSScript.sh
-      rm /bin/vps
-      rm /bin/VPS
-      apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh
-      clear
-      chmod +x VPSScript.sh
-      echo -e "\E[41;1;37m SCRIPT ATUALIZADO \E[0m"
-      sleep 3
-      clear
-      echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
-      sleep 3
+       bash /etc/vpsscript/atualizacao
 }
 HABILITARROOT () {
     wget -y; bash <(wget -qO- https://raw.githubusercontent.com/fabricio94b/HabilitarRoot/main/senharoot.sh)
@@ -110,7 +101,6 @@ case "$x" in
    clear
    ATUALIZACAO
    clear
-   bash VPSScript.sh;
    ;;
     5 | 05)
    clear
