@@ -1,4 +1,4 @@
-echo -e "VERSAO 1.2"
+
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "bash /root/VPSScript.sh" > /bin/vps && chmod +x /bin/vps
 echo "bash /root/VPSScript.sh" > /bin/VPS && chmod +x /bin/VPS
@@ -67,9 +67,9 @@ while true $x != "ok"
 do
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m                   VPSSCRIPT                      \E[0m"
+echo -e "\E[41;1;37m                   VPSSCRIPT  V1.2                \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "VERSAO 1.2"
+echo -e ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━SSHPLUS━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS FREE"
 echo -e "\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPAINELWEB V20"
