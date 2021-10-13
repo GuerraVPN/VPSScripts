@@ -33,6 +33,8 @@ CRASHVPN () {
 }
 ATUALIZACAO () {
       rm /root/VPSScript.sh
+      rm /bin/vps
+      rm /bin/VPS
       apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh
       clear
       chmod +x VPSScript.sh
