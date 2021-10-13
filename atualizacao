@@ -11,7 +11,8 @@ clear
 echo -e "VERIFICANDO ATUALIZACOES..."
 sleep 1.2
 clear
-wget /etc/vpsscript https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao/versao > /dev/null
+wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao > /dev/null
+mv versao /etc/vpsscript/versao
 clear
 chmod +x /etc/vpsscript/versao
 bash /etc/vpsscript/versao
