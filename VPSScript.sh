@@ -110,9 +110,8 @@ case "$x" in
    echo -e "\033[1;31mSaindo...\033[0m"
    sleep 2
    clear
-   echo -e "Se quiser acessar o Menu novamente digite o comando \033[ VPS \033] "
-   sleep 3
    exit;
+   ;;
     *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
    sleep 2
