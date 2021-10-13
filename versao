@@ -13,13 +13,17 @@ NAO () {
    clear
 }
 clear
-echo -e "VERSAO ATUAL => V13"
-echo -e "ADICIONADO:
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[41;1;37m                  ATUALIZACAO                     \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;33m
+VERSAO ATUAL => V14
+ADICIONADO:
 => Novo menu de Atualizações"
 echo -e ""
 echo -e ""
 echo -e ""
-echo -ne "DESEJA ATUALIZAR (S|N)? :"; read x
+echo -ne "033/[1;32mDESEJA ATUALIZAR (S|N)? :"; read x
 
 case "$x" in
     S)
