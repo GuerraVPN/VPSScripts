@@ -42,6 +42,18 @@ ATUALIZACAO () {
       echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
       sleep 3
 }
+HABILITARROOT () {
+    wget -y; bash <(wget -qO- https://raw.githubusercontent.com/fabricio94b/HabilitarRoot/main/senharoot.sh)
+}
+TCPSPEED () {
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/TCP-Speed/tcptweaker.sh
+    clear
+    echo -e "\E[41;1;37m SCRIPT INSTALADO \E[0m"
+    sleep 3
+    clear
+    echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
+    sleep 3
+}
 while true $x != "ok"
 do
 clear
@@ -55,7 +67,9 @@ echo -e "\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPAINELWE
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━CRASHVPN━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mCRASHVPN"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━OUTRAS FUNÇOES━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;31m  [\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAÇÃO"
+echo -e "\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAÇÃO"
+echo -e "\033[1;31m  [\033[1;36m 05 \033[1,31m] \033[1;37m• \033[1;33mHABILITAR ROOT"
+echo -e "\033[1;31m  [\033[1;36m 06 \033[1,31m] \033[1;37m• \033[1;33mTCP SPEED"
 echo -e "\033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;0mSAIR"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -80,11 +94,21 @@ case "$x" in
    clear
    bash crashvpn;
    ;;
-    9 | 09)
+    4 | 04)
    clear
    ATUALIZACAO
    clear
    bash VPSScript.sh;
+   ;;
+    5 | 05)
+   clear
+   HABILITARROOT
+   clear;
+   ;;
+    6 | 06)
+   clear
+   TCPSPEED
+   bash tcptweaker.sh;
    ;;
     0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
