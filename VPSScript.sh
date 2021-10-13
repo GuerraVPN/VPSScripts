@@ -66,22 +66,26 @@ case "$x" in
    clear
    SSHPLUS
    clear
-   bash Plus
+   bash Plus;
+   ;;
     2 | 02)
    clear
    PAINEPWEB20
    clear
-   bash install
+   bash install;
+   ;;
     3 | 03)
    clear
    CRASHVPN
    clear
-   bash crashvpn
+   bash crashvpn;
+   ;;
     9 | 09)
    clear
    ATUALIZACAO
    clear
-   bash VPSScript.sh
+   bash VPSScript.sh;
+   ;;
     0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
    sleep 2
