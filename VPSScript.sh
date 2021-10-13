@@ -1,6 +1,5 @@
 
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-mkdir /etc/vpsscript && mv /root/vpsscript.sh /etc/vpsscript/VPSScript
 echo "bash /etc/vpsscript/VPSScript" > /bin/vps && chmod +x /bin/vps
 echo "bash /etc/vpsscript/VPSScript" > /bin/VPS && chmod +x /bin/VPS
 ##CONFIGURACOES DO SCRIPT
