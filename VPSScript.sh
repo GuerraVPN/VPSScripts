@@ -1,6 +1,6 @@
 
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "/root/SuperScripts" > /bin/ss && chmod +x /bin/ss > /dev/null 2>&1
+echo "/root/VPSScript.sh" > /bin/VPS && chmod +x /bin/ss > /dev/null 2>&1
 
 ##CONFIGURACOES DO BOT
 
@@ -13,6 +13,7 @@ SSHPLUS () {
       sleep 3
       clear
       echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
+      sleep 3
       clear
       chmod 777 Plus
       ./Plus
@@ -23,8 +24,22 @@ PAINELWEB20 () {
       sleep 3
       clear
       echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
+      sleep 3
+      clear
       chmod 777 install
       ./install
+}
+ATUALIZACAO () {
+      rm VPSScript
+      apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh
+      clear
+      chmod +x VPSScript
+      echo -e "\E[41;1;37m SCRIPT ATUALIZADO \E[0m"
+      sleep 3
+      clear
+      echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
+      sleep 3
+      clear
 }
 while true $x != "ok"
 do
@@ -57,6 +72,7 @@ case "$x" in
    clear
    exit;
    ;;
+    
     0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
    sleep 2
