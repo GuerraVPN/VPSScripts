@@ -67,7 +67,7 @@ case "$x" in
    SSHPLUS
    clear
    bash Plus
-    2| 02)
+    2 | 02)
    clear
    PAINEPWEB20
    clear
