@@ -101,12 +101,17 @@ case "$x" in
     5 | 05)
    clear
    HABILITARROOT
-   clear;
+   clear
+   bash /bin/VPS
+   exit;
    ;;
     6 | 06)
    clear
    TCPSPEED
-   bash tcptweaker.sh;
+   bash tcptweaker.sh
+   clear
+   bash /bin/VPS
+   exit;
    ;;
     0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
