@@ -81,6 +81,7 @@ case "$x" in
    clear
    ATUALIZACAO
    clear
+   bash VPSScript.sh
     0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
    sleep 2
