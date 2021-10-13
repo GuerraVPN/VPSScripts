@@ -112,8 +112,7 @@ case "$x" in
    clear
    Se quiser acessar o Menu novamente digite o comando "VPS"
    sleep 3
-   exit
-   clear;
+   exit;
    *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
    sleep 2
