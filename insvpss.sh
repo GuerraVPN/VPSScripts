@@ -21,7 +21,7 @@ case "$x" in
    apt-get update -y > /etc/null; apt-get upgrade -y > /etc/null; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh > /etc/null
    clear
    wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/vpsscriptatt > /etc/null
-   mv vpsscriptatt /etc/vpsscript/vpsscript
+   mv vpsscriptatt /etc/vpsscript/vpsscript > /etc/null
    mv VPSScript.sh /etc/vpsscript/VPSScript > /etc/null
    clear;
    ;;
