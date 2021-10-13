@@ -119,6 +119,8 @@ case "$x" in
    *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
    sleep 2
+   clear
+   Se quiser acessar o Menu novamente digite o comando "VPS"
 esac
 done
 }
