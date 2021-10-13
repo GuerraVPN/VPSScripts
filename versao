@@ -24,7 +24,7 @@ ADICIONADO:
 echo -e ""
 echo -e ""
 echo -e ""
-echo -ne "033/[1;32m DESEJA ATUALIZAR (S|N)? :"; read x
+echo -ne "\033[0;31m DESEJA ATUALIZAR (S|N)? :\033[0m"; read x
 
 case "$x" in
     S)
