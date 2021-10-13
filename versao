@@ -1,3 +1,37 @@
-VERSAO: 10
-ADICIONADO "NOVO" SISTEMA DE ATUALIZACOES                                                              
-@GuerraF1000
+##CONFIG VERSAO
+SIM () {
+   apt-get update -y; apt-get upgrade -y; wget https://raw>
+   clear
+   echo -e "SCRIPT INSTALADO"
+   sleep 2
+   echo -e "INICIANDO SCRIPT"
+   sleep 2
+   bash VPSScript.sh
+   clear
+}
+NAO () {
+   clear
+}
+clear
+echo -e "VERSAO ATUAL => V10"
+echo -e "ADICIONADO:
+=> Novo menu de Atualizações
+echo -e "
+
+
+"
+echo -ne "DESEJA ATUALIZAR (S|N)? :"; read x
+
+case "$x" in
+    S | Sim)
+   SIM
+   exit;
+   ;;
+    N | Nao)
+   NAO
+   exit;
+   ;;
+
+esac
+done
+#fim
