@@ -62,17 +62,17 @@ fun_atts () {
 
   [[ -e /tmp/att ]] && rm /tmp/att
 
-	wget -c -P /home https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Install/versao
+	wget -c -P /home https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao
 
 	[[ -f "/home/versao" ]] && mv /home/versao /tmp/att
 
-	[[ ! -e /bin/versao ]] && rm -rf /bin/menu
+	[[ ! -e /bin/versao ]] && rm -rf /bin/vps
 
 } > /dev/null 2>&1
 
-echo -e "                              \033[1;31mGIGANTE DE FERRO\033[1;36m"
+echo -e "                              \033[1;31m@GuerraF1000\033[1;36m"
 
-echo -e "   VPSManager" | figlet
+echo -e "   VPSScript" | figlet
 
 echo " "
 
@@ -86,7 +86,7 @@ fun_bar 'fun_atts'
 
 	echo -ne "\033[1;31m ENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
 
-	menu
+	vps
 
 }
 
@@ -106,7 +106,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
   echo -ne " \033[1;31m ENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
 
-  menu
+  vps
 
 } || {
 
@@ -132,11 +132,11 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
     sleep 3
 
-    wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus > /dev/null 2>&1
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh > /dev/null 2>&1
 
-    chmod +x Plus
+    chmod +x VPSScript.sh
 
-    ./Plus
+    ./VPSScript.sh
 
     clear
 
@@ -146,11 +146,11 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
     echo -ne "\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
 
-    menu
+    vps
 
   else
 
-    menu
+    vps
 
   fi
 
