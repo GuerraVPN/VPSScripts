@@ -1,6 +1,6 @@
 ##CONFIG VERSAO
 SIM () {
-   apt-get update -y; apt-get upgrade -y; wget https://raw>
+   apt-get update -y; apt-get upgrade -y; wget apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh
    clear
    echo -e "SCRIPT INSTALADO"
    sleep 2
@@ -13,25 +13,22 @@ NAO () {
    clear
 }
 clear
-echo -e "VERSAO ATUAL => V10"
+echo -e "VERSAO ATUAL => V13"
 echo -e "ADICIONADO:
-=> Novo menu de Atualizações
-echo -e "
-
-
-"
+=> Novo menu de Atualizações"
+echo -e ""
+echo -e ""
+echo -e ""
 echo -ne "DESEJA ATUALIZAR (S|N)? :"; read x
 
 case "$x" in
-    S | Sim)
+    S)
    SIM
    exit;
    ;;
-    N | Nao)
+    N)
    NAO
    exit;
    ;;
-
 esac
-done
 #fim
