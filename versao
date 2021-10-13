@@ -1,6 +1,8 @@
 ##CONFIG VERSAO
 SIM () {
-   rm /etc/vpsscript/VPSScript /etc/vpsscript/VPSScript.sh
+   rm /etc/vpsscript/VPSScript
+   sleep 2
+   clear
    apt-get update -y; apt-get upgrade -y; wget apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh
    mv VPSScript.sh /etc/vpsscript/VPSScript
    clear
