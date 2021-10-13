@@ -77,6 +77,7 @@ case "$x" in
    clear
    ATUALIZACAO
    clear
+   VPS
    exit;
    ;;
     0 | 00)
