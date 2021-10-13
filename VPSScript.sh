@@ -31,6 +31,7 @@ PAINELWEB20 () {
 }
 ATUALIZACAO () {
       rm VPSScript
+      rm /bin/VPS
       apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh
       clear
       chmod +x VPSScript
@@ -72,7 +73,12 @@ case "$x" in
    clear
    exit;
    ;;
-    
+    9 | 09)
+   clear
+   ATUALIZACAO
+   clear
+   exit;
+   ;;
     0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
    sleep 2
