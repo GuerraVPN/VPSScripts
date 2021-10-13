@@ -40,6 +40,7 @@ ATUALIZACAO () {
       echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
       sleep 3
       clear
+      ./VPSScript.sh
 }
 while true $x != "ok"
 do
@@ -77,7 +78,6 @@ case "$x" in
    clear
    ATUALIZACAO
    clear
-   VPS
    exit;
    ;;
     0 | 00)
