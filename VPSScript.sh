@@ -34,7 +34,7 @@ ATUALIZACAO () {
       rm /bin/VPS
       apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh
       clear
-      chmod +x VPSScript
+      chmod +x VPSScript.sh
       echo -e "\E[41;1;37m SCRIPT ATUALIZADO \E[0m"
       sleep 3
       clear
