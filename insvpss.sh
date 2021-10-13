@@ -18,9 +18,9 @@ case "$x" in
    clear
    mkdir /etc/vpsscript
    clear
-   apt-get update -y > /etc/null; apt-get upgrade -y > /etc/null; wget /etc/vpsscript https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh > /etc/null
+   apt-get update -y > /etc/null; apt-get upgrade -y > /etc/null; wget -i /etc/vpsscript https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh > /etc/null
    clear
-   wget /etc/vpsscript https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/vpsscriptatt > /etc/null
+   wget -i /etc/vpsscript https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/vpsscriptatt > /etc/null
    mv /etc/vpsscript/VPSScript.sh /etc/vpsscript/VPSScript > /etc/null
    clear;
    ;;
