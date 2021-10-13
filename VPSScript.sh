@@ -14,10 +14,6 @@ SSHPLUS () {
       clear
       echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
       sleep 3
-      clear
-      chmod 777 Plus
-      bash Plus
-      rm Plus
 }
 PAINELWEB20 () {
       apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v20/install
@@ -26,10 +22,6 @@ PAINELWEB20 () {
       clear
       echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
       sleep 3
-      clear
-      chmod 777 install
-      bash install
-      rm install
 }
 CRASHVPN () {
       apt-get update -y && apt-get upgrade -y && wget https://xeon.worldofdragon.net:8443/CrashVPN/main/crashvpn
@@ -38,9 +30,6 @@ CRASHVPN () {
       clear
       echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
       sleep 3
-      clear
-      chmod 777 crashvpn && bash crashvpn
-      rm crashvpn
 }
 ATUALIZACAO () {
       rm /root/VPSScript.sh
@@ -52,7 +41,6 @@ ATUALIZACAO () {
       clear
       echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
       sleep 3
-      clear
 }
 while true $x != "ok"
 do
@@ -78,20 +66,17 @@ case "$x" in
    clear
    SSHPLUS
    clear
-   exit;
-   ;;
+   bash Plus
     2| 02)
    clear
    PAINEPWEB20
    clear
-   exit;
-   ;;
+   bash install
     3 | 03)
    clear
    CRASHVPN
    clear
-   exit;
-   ;;
+   bash crashvpn
     9 | 09)
    clear
    ATUALIZACAO
