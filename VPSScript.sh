@@ -1,8 +1,8 @@
 
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "bash /root/VPSScript.sh" > /bin/vps && chmod +x /bin/vps > /dev/null 2>&1
-echo "bash /root/VPSScript.sh" > /bin/VPS && chmod +x /bin/VPS > /dev/null 2>&1
-##CONFIGURACOES DO BOT
+echo "bash /root/VPSScript.sh" > /bin/vps && chmod +x /bin/vps
+echo "bash /root/VPSScript.sh" > /bin/VPS && chmod +x /bin/VPS
+##CONFIGURACOES DO SCRIPT
 
 ##BY NARUTINBR
 
