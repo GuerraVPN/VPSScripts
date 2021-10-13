@@ -1,0 +1,19 @@
+clear
+echo -e "VERIFICANDO ATUALIZACOES"
+sleep 1.2
+clear
+echo -e "VERIFICANDO ATUALIZACOES."
+sleep 1.2
+clear
+echo -e "VERIFICANDO ATUALIZACOES.."
+sleep 1.2
+clear
+echo -e "VERIFICANDO ATUALIZACOES..."
+sleep 1.2
+clear
+wget /etc/vpsscript https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao/versao > /dev/null
+clear
+chmod +x /etc/vpsscript/versao
+bash /etc/vpsscript/versao
+rm /etc/vpsscript/versao
+clear
