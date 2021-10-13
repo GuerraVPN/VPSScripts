@@ -1,4 +1,4 @@
-
+echo -e "VERSAO 1.2"
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "bash /root/VPSScript.sh" > /bin/vps && chmod +x /bin/vps
 echo "bash /root/VPSScript.sh" > /bin/VPS && chmod +x /bin/VPS
@@ -54,6 +54,15 @@ TCPSPEED () {
     echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
     sleep 3
 }
+CONFIGBOT () {
+    apt-get update -y && apt-get upgrade -y && wget https://raw.githubusercontent.com/GuerraVPN/configbot/main/installconfigbot.sh
+    clear
+    echo -e "\E[41;1;37m SCRIPT INSTALADO \E[0m"
+    sleep 3
+    clear
+    echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
+    sleep 3
+}
 while true $x != "ok"
 do
 clear
@@ -70,6 +79,7 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━OUTRAS FUN
 echo -e "\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mATUALIZACAO"
 echo -e "\033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT"
 echo -e "\033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mTCP SPEED"
+echo -e "\033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mBOT FREE (CONFIGBOT)"
 echo -e "\033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;0mSAIR"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -115,10 +125,19 @@ case "$x" in
    bash /bin/VPS
    exit;
    ;;
+    7 | 07)
+   clear
+   CONFIGBOT
+   clear
+   bash /bin/vps
+   exit;
+   ;;
     0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
    sleep 2
    clear
+   echo -e "Se quiser acessar o Menu novamente digite o comando "VPS""
+   sleep 3
    exit;
    ;;
     *)
