@@ -102,12 +102,10 @@ case "$x" in
    clear
    HABILITARROOT
    clear;
-   ;;
     6 | 06)
    clear
    TCPSPEED
    bash tcptweaker.sh;
-   ;;
     0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
    sleep 2
@@ -116,7 +114,6 @@ case "$x" in
    sleep 3
    exit
    clear;
-   ;;
    *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
    sleep 2
