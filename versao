@@ -11,5 +11,5 @@ echo -e ""
 echo -e ""
 echo -e ""
 echo -ne "\033[1;36m DE ENTER PARA SAIR: \033[1;0m"
-rm versao
+rm /etc/vpsscript/versao
 bash /bin/vps
