@@ -132,8 +132,7 @@ case "$x" in
    ;;
     8 | 08)
    clear
-   wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao
-   bash /etc/vpsscript/versao
+   bash <(wget -qO- https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao)
    exit;
    ;;
     0 | 00)
