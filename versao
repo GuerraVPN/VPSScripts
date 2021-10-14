@@ -8,8 +8,8 @@ SIM () {
    clear
    echo -e "INICIANDO SCRIPT"
    sleep 2
-   rm versao
-   mkdir /etc/vpsscript
+   rm versao /etc/vpsscript/VPSScript
+   sleep 1s
    mv VPSScript.sh /etc/vpsscript/VPSScript
    bash /etc/vpsscript/VPSScript
    clear
