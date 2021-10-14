@@ -20,9 +20,7 @@ case "$x" in
    clear
    apt-get update -y > /etc/null; apt-get upgrade -y > /etc/null; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh > /etc/null
    clear
-   wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/atualizacao > /etc/null
-   mv atualizacao /etc/vpsscript/atualizacao > /etc/null
-   mv VPSScript.sh /etc/vpsscript/VPSScript > /etc/null
+   mv VPSScript.sh /etc/vpsscript/VPSScript.sh > /etc/null
    clear;
    ;;
     2|02)
@@ -34,7 +32,7 @@ esac
 case "$x" in
     S)
    clear
-   bash /etc/vpsscript/VPSScript
+   bash /etc/vpsscript/VPSScript.sh
    ;;
     N)
    clear
