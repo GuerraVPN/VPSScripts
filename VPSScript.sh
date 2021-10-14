@@ -33,9 +33,9 @@ CRASHVPN () {
 }
 ATUALIZACAO () {
        rm /bin/vpsscript/VPSScript.sh
-       wget https://raw.githubusercontent.com/GuerraVPN/VPSScript/main/VPSScript.sh > /etc/null
+       wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh > /etc/null
        echo -e "\033[1;33m SCRIPT ATUALIZADO \033[0m"
-       sleep 2
+       sleep 3
        mv VPSScript.sh /bin/vpsscript/VPSScript.sh
        bash /bin/vpscript/VPSScript.sh
 }
