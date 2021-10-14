@@ -11,7 +11,9 @@ echo -e ""
 echo -e ""
 echo -e ""
 echo -ne "\033[1;36m DESEJA VOLTAR AO MENU?(S/N): \033[1;0m"; read x
+case "$x" in    
     S)
    bash /bin/vps
    exit;
    ;;
+esac
