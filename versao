@@ -10,4 +10,6 @@ ADICIONADO:
 echo -e ""
 echo -e ""
 echo -e ""
-echo -ne "\033[1;36m DE ENTER PARA SAIR: \033[1;0m"; read sair
+echo -ne "\033[1;36m DE ENTER PARA SAIR: \033[1;0m"
+rm versao
+bash /bin/vps
