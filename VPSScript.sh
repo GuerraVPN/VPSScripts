@@ -65,7 +65,7 @@ while true $x != "ok"
 do
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m                   VPSSCRIPT  V20                 \E[0m"
+echo -e "\E[41;1;37m                   VPSSCRIPT  V21                 \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━SSHPLUS━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -78,6 +78,7 @@ echo -e "\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mATUALIZA
 echo -e "\033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT"
 echo -e "\033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mTCP SPEED"
 echo -e "\033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mBOT FREE (CONFIGBOT)"
+echo -e "\033[1;31m  [\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mVERSÃO"
 echo -e "\033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;0mSAIR"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -127,6 +128,13 @@ case "$x" in
    CONFIGBOT
    clear
    bash /bin/vps
+   exit;
+   ;;
+    8 | 08)
+   clear
+   wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao
+   clear
+   bash versao
    exit;
    ;;
     0 | 00)
