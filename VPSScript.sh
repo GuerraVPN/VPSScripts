@@ -1,7 +1,7 @@
 
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "bash /etc/vpsscript/VPSScript" > /bin/vps && chmod +x /bin/vps
-echo "bash /etc/vpsscript/VPSScript" > /bin/VPS && chmod +x /bin/VPS
+echo "bash /etc/vpsscript/VPSScript.sh" > /bin/vps && chmod +x /bin/vps
+echo "bash /etc/vpsscript/VPSScript.sh" > /bin/VPS && chmod +x /bin/VPS
 ##CONFIGURACOES DO SCRIPT
 
 ##BY NARUTINBR
@@ -32,7 +32,12 @@ CRASHVPN () {
       sleep 3
 }
 ATUALIZACAO () {
-       bash /etc/vpsscript/atualizacao
+       rm /bin/vpsscript/VPSScript.sh
+       wget https://raw.githubusercontent.com/GuerraVPN/VPSScript/main/VPSScript.sh > /etc/null
+       echo -e "\033[1;33m SCRIPT ATUALIZADO \033[0m"
+       sleep 2
+       mv VPSScript.sh /bin/vpsscript/VPSScript.sh
+       bash /bin/vpscript/VPSScript.sh
 }
 HABILITARROOT () {
     wget -y; bash <(wget -qO- https://raw.githubusercontent.com/fabricio94b/HabilitarRoot/main/senharoot.sh)
@@ -59,7 +64,7 @@ while true $x != "ok"
 do
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m                   VPSSCRIPT  V19                 \E[0m"
+echo -e "\E[41;1;37m                   VPSSCRIPT  V20                 \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━SSHPLUS━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
