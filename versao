@@ -1,18 +1,18 @@
 ##CONFIG VERSAO
 SIM () {
-   rm /etc/vpsscript/VPSScript
+   rm -rf /etc/vpsscript
    sleep 2
    clear
-   apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh
-   mv VPSScript.sh /etc/vpsscript/VPSScript
+   wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/insvpss.sh
    clear
    echo -e "SCRIPT INSTALADO"
    sleep 2
    clear
    echo -e "INICIANDO SCRIPT"
    sleep 2
-   rm /etc/vpsscript/versao
-   bash /etc/vpsscript/VPSScript
+   rm versao
+   bash insvpss.sh
+   rm insvpss.sh
    clear
 }
 NAO () {
