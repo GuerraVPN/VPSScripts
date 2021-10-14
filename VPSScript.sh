@@ -61,10 +61,6 @@ CONFIGBOT () {
     echo -e "\E[41;1;37m INICIANDO SCRIPT \E[0m"
     sleep 3
 }
-VERSAO () {
-    wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao
-    clear
-}
 while true $x != "ok"
 do
 clear
@@ -136,8 +132,7 @@ case "$x" in
    ;;
     8 | 08)
    clear
-   VERSAO
-   clear
+   wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/versao
    bash /etc/vpsscript/versao
    exit;
    ;;
