@@ -105,8 +105,7 @@ case "$x" in
     4 | 04)
    clear
    ATUALIZACAO
-   mv VPSScript.sh /bin/vpsscript/VPSScript.sh
-   bash /bin/vps
+   mv VPSScript.sh /etc/vpsscript/VPSScript.sh
    clear
    ;;
     5 | 05)
