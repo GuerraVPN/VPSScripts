@@ -1,7 +1,7 @@
 
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "bash /etc/vpsscript/VPSScript.sh" > /bin/vps && chmod +x /bin/vps
-echo "bash /etc/vpsscript/VPSScript.sh" > /bin/VPS && chmod +x /bin/VPS
+echo "bash <(wget -qO- https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh)" > /bin/vps && chmod +x /bin/vps
+echo "bash <(wget -qO- https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh)" > /bin/VPS && chmod +x /bin/VPS
 ##CONFIGURACOES DO SCRIPT
 
 ##BY NARUTINBR
@@ -64,7 +64,7 @@ while true $x != "ok"
 do
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m                   VPSSCRIPT  V21                 \E[0m"
+echo -e "\E[41;1;37m                   VPSSCRIPT  V22                 \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━SSHPLUS━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
