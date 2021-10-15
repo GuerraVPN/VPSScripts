@@ -37,8 +37,7 @@ ATUALIZACAO () {
        wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/VPSScript.sh > /etc/null
        echo -e "\033[1;33m SCRIPT ATUALIZADO \033[0m"
        sleep 3
-       mv VPSScript.sh /bin/vpsscript/VPSScript.sh
-       bash /bin/vpscript/VPSScript.sh
+       clear
 }
 HABILITARROOT () {
     wget -y; bash <(wget -qO- https://raw.githubusercontent.com/fabricio94b/HabilitarRoot/main/senharoot.sh)
@@ -106,6 +105,8 @@ case "$x" in
     4 | 04)
    clear
    ATUALIZACAO
+   mv VPSScript.sh /bin/vpsscript/VPSScript.sh
+   bash /bin/vps
    clear
    ;;
     5 | 05)
