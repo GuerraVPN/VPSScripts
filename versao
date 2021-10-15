@@ -17,4 +17,7 @@ case "$x" in
    bash /bin/vps
    exit;
    ;;
+    N)
+   exit;
+   ;;
 esac
